@@ -1,0 +1,23 @@
+// Mixins Here
+
+.nav-display(){
+    display: flex;
+    justify-content: center;
+}
+
+.walk-display(){
+    display:flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    
+}
+
+
+// parametric mixin for button
+.btn-display(@padding,@b-color,@radius,@font){
+    padding: @padding;
+    background-color: @b-color;
+    border-radius: @radius;
+    font-size: @font;
+}
+
