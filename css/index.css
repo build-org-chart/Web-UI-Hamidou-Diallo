@@ -171,6 +171,9 @@ header nav {
   width: 100%;
   margin-top: 10px;
 }
+header nav .logo {
+  margin-left: 10px;
+}
 header nav ul {
   display: flex;
   padding-top: 40px;
@@ -181,17 +184,69 @@ header nav ul li a {
   padding-right: 20px;
   color: white;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  text-decoration: underline;
 }
 header nav .nav-end {
   padding-top: 20px;
   justify-content: space-evenly;
 }
 header nav .nav-end a .btn-1 {
-  border-radius: 15px;
+  border-radius: 0px;
   padding: 15px 30px;
   font-size: 1.2rem;
   margin-right: 50px;
   color: white;
   background-color: #F64C72;
   text-align: center;
+}
+.main-content {
+  position: relative;
+  text-align: center ;
+  color: white;
+}
+.main-content .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lower-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.lower-content .low-content-1 {
+  width: 50%;
+}
+.lower-content .low-content-1 h1,
+.lower-content .low-content-1 p {
+  text-align: center;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+.lower-content .low-content-2 {
+  width: 50%;
+}
+.lower-content .low-content-2 h1,
+.lower-content .low-content-2 p {
+  text-align: center;
+  color: white;
+}
+.lower-content .low-content-3 {
+  width: 100%;
+}
+.lower-content .low-content-3 img {
+  width: 100%;
+  height: 50%;
+}
+.lower-content .low-content-3 h1,
+.lower-content .low-content-3 p {
+  text-align: center;
+  width: 70%;
+  color: white;
+  margin-left: 15%;
 }
