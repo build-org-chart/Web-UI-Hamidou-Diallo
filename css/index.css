@@ -1,3 +1,6 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 html,
 body,
@@ -122,4 +125,128 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  background-color: #2F2FA2;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+header nav .logo {
+  margin-left: 10px;
+}
+header nav ul {
+  display: flex;
+  padding-top: 40px;
+  margin-right: 100px;
+}
+header nav ul li a {
+  margin: 20px;
+  padding-right: 20px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  text-decoration: underline;
+}
+header nav .nav-end {
+  padding-top: 20px;
+  justify-content: space-evenly;
+}
+header nav .nav-end a .btn-1 {
+  border-radius: 0px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  margin-right: 50px;
+  color: white;
+  background-color: #F64C72;
+  text-align: center;
+}
+.main-content {
+  position: relative;
+  text-align: center ;
+  color: white;
+}
+.main-content .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lower-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.lower-content .low-content-1 {
+  width: 50%;
+}
+.lower-content .low-content-1 h1,
+.lower-content .low-content-1 p {
+  text-align: center;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+.lower-content .low-content-2 {
+  width: 50%;
+}
+.lower-content .low-content-2 h1,
+.lower-content .low-content-2 p {
+  text-align: center;
+  color: white;
+}
+.lower-content .low-content-3 {
+  width: 100%;
+}
+.lower-content .low-content-3 img {
+  width: 100%;
+  height: 50%;
+}
+.lower-content .low-content-3 h1,
+.lower-content .low-content-3 p {
+  text-align: center;
+  width: 70%;
+  color: white;
+  margin-left: 15%;
 }
