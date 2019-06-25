@@ -4,6 +4,6 @@
 // })
 
 window.addEventListener("scroll", function(ev){
-     document.querySelector(".main-container").style.backgroundColor = "#F64C72";
+     document.querySelector(".low-content-3").style.backgroundColor = "#F64C72";
 
 });
