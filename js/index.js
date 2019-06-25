@@ -7,3 +7,7 @@ window.addEventListener("scroll", function(ev){
      document.querySelector(".low-content-3").style.backgroundColor = "#F64C72";
 
 });
+
+
+TODO: Begin tabs and additional events for the landing page.Begin
+
