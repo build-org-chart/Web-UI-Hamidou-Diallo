@@ -164,6 +164,7 @@ p {
 header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 header nav {
   display: flex;
@@ -194,7 +195,7 @@ header nav .nav-end {
   justify-content: space-evenly;
 }
 header nav .nav-end a .btn-1 {
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 15px 30px;
   font-size: 1.2rem;
   margin-right: 50px;
@@ -249,4 +250,10 @@ header nav .nav-end a .btn-1 {
   width: 70%;
   color: white;
   margin-left: 15%;
+}
+.footer {
+  text-align: center;
+  color: #ff6644;
+  font-size: 2rem;
+  font-weight: bold;
 }
