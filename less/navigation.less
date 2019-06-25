@@ -1,17 +1,35 @@
 header{
-   .nav-display();
-   
+    .nav-display();
+    margin-bottom: 10px;
+    background-color: @bod-color;
+
+    @media @phone{
+        width: 100%;
+        margin: 0;
+    
+      }
+    // 
 
    nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 10px;
-    // align-items: baseline;
+
+        @media @phone{
+            display: flex;
+            flex-direction: column;
+        
+        }
 
 
         .logo{
             margin-left: 10px;
+
+            @media @phone{
+                margin-left: 70px;
+            
+              }
           
         }
 
@@ -27,9 +45,16 @@ header{
                 color: @nav-font;
                 font-size: 1.5rem;
                 text-decoration: none;
+
+                @media @phone{
+                    border: 2px solid black;
+                    padding: 0;
+            
+                }
             }
             a:hover{
                 text-decoration: underline;
+                color: @nav-btn;
             }
 
         }
@@ -38,14 +63,24 @@ header{
             padding-top: 20px;
             justify-content: space-evenly;
             
+            @media @phone{
+                
+            
+            }
             a .btn-1{
-                border-radius: 0px;
+                border-radius: 5px;
                 padding: 15px 30px;;
                 font-size: 1.2rem;
                 margin-right: 50px;
                 color: white;
-                background-color: @nav-btn;
+                background-color: darken(@nav-btn,10%);
                 text-align: center;
+            }
+
+            .btn-1:hover{
+                color: @nav-btn;
+                background-color: white;
+                text-decoration: underline;
             }
             
         }

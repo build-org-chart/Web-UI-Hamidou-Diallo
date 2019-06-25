@@ -11,8 +11,13 @@ html {
 html, body {
   font-family: 'Ubuntu', sans-serif;
   
-  height: 100%;
+ 
   width: 100%;
+  @media @phone{
+    width: 100%;     
+    margin: 0;
+            
+  }
   
   // overflow: hidden;
 }
@@ -40,5 +45,11 @@ p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @phone{
+    width: 100%;
+    margin: 0;
+
+  }
 }
 

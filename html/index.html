@@ -7,10 +7,12 @@
     <!-- CSS,Less, Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="/css/index.css" >
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
    
     <!-- Scripts -->
    
-    <script src="./js/index.js" async></script>
+    <script src="/js/index.js" async></script>
     <title>Org-Chart</title>
 </head>
 <body>
@@ -32,6 +34,7 @@
 
                 </ul>
                 <!-- Log in and Sign up Buttons -->
+            TODO: Refactor buttons into links
                 <div class="nav-end">
                     <a href=""><button class="btn-1" type="button">Log In</button></a>
                     <a href=""><button class="btn-1" type="button">Sign Up</button></a>
@@ -41,52 +44,68 @@
         </header>
         <!-- Main-Content of Landing Page -->
         
-        <section class="main-content">
-            <div class="centered"><h1>Headline 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quo odit! Harum asperiores modi, mollitia iure accusamus repellat odio similique tenetur, laborum cupiditate nisi cum doloribus nesciunt iste. Natus?</p>
-                <button class="btn-content">Sign up</button>
-            </div>
-            <img src="/img/main-content-1.jpg" alt="decisions" width="1000px">
+        <div class="main-container">
+                <section class="main-content">
+                        <div class="centered"><h1>Headline 1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quo odit! Harum asperiores modi, mollitia iure accusamus repellat odio similique tenetur, laborum cupiditate nisi cum doloribus nesciunt iste. Natus?</p>
+                            <button class="btn-content">Sign up</button>
+                        </div>
+                        <img src="/img/main-content-1.jpg" alt="decisions" width="1000px">
+                        
+                    </section>
             
-        </section>
-
-        <section class="lower-content">
-            <div class="low-content-1">
+                    <section class="lower-content">
+                        <div class="low-content-1">
+                                
+                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ab inventore tempora suscipit quas sequi fugiat voluptatibus ipsam soluta rem. Dolore ipsa provident tenetur quisquam beatae sint expedita! In, quam!</h1>
+                                <p>Headline 1</p>
+                                <a href=""><button class="btn-content">Learn More</button></a>
+                                <img src="/img/main-content-1.jpg" alt="decisions" width="500px">
+                        </div>
+            
+                        <div class="low-content-2">
+                                
+                                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam unde eos sit nostrum libero ullam explicabo, rerum, harum doloribus fugiat quas beatae totam nulla, dolorum ad optio vero cumque quibusdam!</h1>
+                                <p>Headline 1</p>
+                                <a href=""><button class="btn-content">Learn More</button></a>
+                                <img src="/img/main-content-1.jpg" alt="decisions" width="500px">
+                        </div>
+            
+                        <!-- <div class="low-content-3">
+                                
+                                <h1>Headline 1</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quo odit! Harum asperiores modi, mollitia iure accusamus repellat odio similique tenetur, laborum cupiditate nisi cum doloribus nesciunt iste. Natus?</p>
+                                <button class="btn-content">Learn More</button>
+                                <img src="/img/main-content-1.jpg" alt="decisions" width="500px"height="200px">
+                        </div> -->
+            
+                    </section>
+            
+                    <!-- Tab Section -->
+                    <section class = "tabs">
+            
+            
+                    </section>
                     
-                    <h1>Headline 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quo odit! Harum asperiores modi, mollitia iure accusamus repellat odio similique tenetur, laborum cupiditate nisi cum doloribus nesciunt iste. Natus?</p>
-                    <button class="btn-content">Learn More</button>
-                    <img src="/img/main-content-1.jpg" alt="decisions" width="500px">
-            </div>
-
-            <div class="low-content-2">
-                    
-                    <h1>Headline 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quo odit! Harum asperiores modi, mollitia iure accusamus repellat odio similique tenetur, laborum cupiditate nisi cum doloribus nesciunt iste. Natus?</p>
-                    <button class="btn-content">Learn More</button>
-                    <img src="/img/main-content-1.jpg" alt="decisions" width="500px">
-            </div>
-
-            <div class="low-content-3">
-                    
-                    <h1>Headline 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias quo odit! Harum asperiores modi, mollitia iure accusamus repellat odio similique tenetur, laborum cupiditate nisi cum doloribus nesciunt iste. Natus?</p>
-                    <button class="btn-content">Learn More</button>
-                    <img src="/img/main-content-1.jpg" alt="decisions" width="500px">
-            </div>
-
-        </section>
-        
-        <!-- Bottom Content of Landing Page  -->
-        <footer class="footer">
-            <!-- Contact Info  -->
-            <div class="contact">
-
-            </div>
-            <!-- Copyright -->
-            &copy; Org-Chart
-
-         </footer>
+                    <!-- Bottom Content of Landing Page  -->
+                    <footer class="footer">
+                        <!-- Contact Info  -->
+                        <div class="contact">
+                            <!-- Add font awesome icons -->
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-slack"></a>
+                        <a href="" class = "fa fa-reddit"></a>
+                        <a href="" class = "fa fa-youtube"></a>
+                        
+            
+                        </div>
+                        
+                        <!-- Copyright -->
+                        &copy; Org-Chart
+            
+                     </footer>
+        </div>
     </main>  
 </body>
 </html>
