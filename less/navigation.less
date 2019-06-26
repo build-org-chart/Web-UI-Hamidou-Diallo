@@ -4,8 +4,10 @@ header{
     background-color: @bod-color;
 
     @media @phone{
+        background-color: #99738E;
         width: 100%;
         margin: 0;
+        overflow: hidden;
     
       }
     // 
@@ -15,11 +17,19 @@ header{
     justify-content: space-between;
     width: 100%;
     margin-top: 10px;
+    overflow: hidden;
+    
+    
+    
 
         @media @phone{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             margin-bottom: 40px;
+            background-color: @bod-color;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: 100%;
         
         }
 
@@ -28,8 +38,9 @@ header{
             margin-left: 10px;
 
             @media @phone{
-                margin-left: 55px;
-                height: 150px;
+                // margin-left: 55px;
+                height: 80px;
+                
             
               }
           
@@ -99,11 +110,15 @@ header{
         }
 
         .drop-down{
+
+            .new-nav{
+                display:none;
+            }
             @media @phone{
                 display: inline-block;
                 cursor: pointer;
-                margin: 15px;
-                margin-top: 0px;
+                margin:  20px 15px 15px 15px;
+                
                 
 
                 .bar1, .bar2, .bar3{
@@ -113,11 +128,17 @@ header{
                         background-color: #fff;
                         margin: 6px 0;
                         transition: .4s;
-                        margin-left: 300px;
+                        
+                        // margin-left: 300px;
                         
                     }
     
                 }
+                .new-nav{
+                    display:none;
+                }
+
+                
             }
 
             
@@ -125,7 +146,17 @@ header{
             
             
         }
+
+        
    }
 
   
+
+  
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }

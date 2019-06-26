@@ -181,8 +181,10 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    background-color: #99738E;
     width: 100%;
     margin: 0;
+    overflow: hidden;
   }
 }
 header nav {
@@ -190,12 +192,17 @@ header nav {
   justify-content: space-between;
   width: 100%;
   margin-top: 10px;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   header nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 40px;
+    background-color: #2F2FA2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
   }
 }
 header nav .logo {
@@ -203,8 +210,7 @@ header nav .logo {
 }
 @media (max-width: 500px) {
   header nav .logo {
-    margin-left: 55px;
-    height: 150px;
+    height: 80px;
   }
 }
 header nav ul {
@@ -263,12 +269,17 @@ header nav .nav-end a:hover {
   background-color: white;
   text-decoration: underline;
 }
+header nav .drop-down .new-nav {
+  display: none;
+}
 @media (max-width: 500px) {
   header nav .drop-down {
     display: inline-block;
     cursor: pointer;
-    margin: 15px;
-    margin-top: 0px;
+    margin: 20px 15px 15px 15px;
+  }
+  header nav .drop-down .new-nav {
+    display: none;
   }
 }
 @media (max-width: 500px) and (max-width: 500px) {
@@ -280,8 +291,12 @@ header nav .nav-end a:hover {
     background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
-    margin-left: 300px;
   }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .main-content {
   position: relative;
@@ -291,8 +306,10 @@ header nav .nav-end a:hover {
 @media (max-width: 500px) {
   .main-content {
     margin: 0 auto;
+    height: 150%;
   }
   .main-content img {
+    height: 100%;
     width: 100%;
   }
 }
@@ -349,7 +366,7 @@ header nav .nav-end a:hover {
   }
 }
 .lower-content .low-content-1 {
-  background-color: #553D67;
+  background-color: #2F2FA2;
   width: 50%;
   padding-top: 30px;
 }
@@ -427,6 +444,7 @@ header nav .nav-end a:hover {
 }
 @media (max-width: 500px) {
   .lower-content .low-content-2 {
+    background-color: #379683;
     width: 100%;
   }
 }
