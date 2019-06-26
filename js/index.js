@@ -29,6 +29,34 @@ function myFunction() {
 }
 
 
+// drop-down menu
+
+// constructor function
+class Dropper{
+    constructor(element){
+        this.element = element;
+        this.bars = this.element.querySelector(".bar1");
+        // console.log("hello");
+        this.links = this.element.querySelector(".link");
+        // console.log("bye");
+        this.bars.addEventListener("click", () => this.toggle());
+    }
+
+    toggle(){
+        this.bars.classList.toggle(".toggle-on");
+        console.log('Hello Tom');
+    }
+}
+
+// query selector
+newNav = document.querySelectorAll(".drop-down");
+console.log(newNav);
+
+newNav.forEach(function(items){
+    return new Dropper(items);
+});
+
+
 
 
 

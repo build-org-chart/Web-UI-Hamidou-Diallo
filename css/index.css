@@ -193,6 +193,8 @@ header nav {
   width: 100%;
   margin-top: 10px;
   overflow: hidden;
+  background-color: #2F2FA2;
+  z-index: 2;
 }
 @media (max-width: 500px) {
   header nav {
@@ -269,23 +271,15 @@ header nav .nav-end a:hover {
   background-color: white;
   text-decoration: underline;
 }
-header nav .drop-down .new-nav {
-  display: none;
-}
 @media (max-width: 500px) {
   header nav .drop-down {
     display: inline-block;
     cursor: pointer;
     margin: 20px 15px 15px 15px;
   }
-  header nav .drop-down .new-nav {
-    display: none;
-  }
 }
 @media (max-width: 500px) and (max-width: 500px) {
-  header nav .drop-down .bar1,
-  header nav .drop-down .bar2,
-  header nav .drop-down .bar3 {
+  header nav .drop-down .bar1 {
     width: 35px;
     height: 5px;
     background-color: #fff;
@@ -296,7 +290,20 @@ header nav .drop-down .new-nav {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 97.5%;
+}
+@media (max-width: 500px) {
+  .sticky {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .sticky {
+    width: 69.5%;
+  }
+}
+.toggle-on {
+  display: block;
 }
 .main-content {
   position: relative;

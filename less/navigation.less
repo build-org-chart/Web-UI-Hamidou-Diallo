@@ -9,15 +9,17 @@ header{
         margin: 0;
         overflow: hidden;
     
-      }
+    }
     // 
 
    nav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px;
-    overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+        overflow: hidden;
+        background-color: @bod-color;
+        z-index: 2;
     
     
     
@@ -54,6 +56,7 @@ header{
                 display: none;
                 padding-top: 20px;
             }
+            
 
             li a{
                  margin: 20px;
@@ -110,53 +113,72 @@ header{
         }
 
         .drop-down{
-
-            .new-nav{
-                display:none;
-            }
-            @media @phone{
+           @media @phone{
                 display: inline-block;
                 cursor: pointer;
                 margin:  20px 15px 15px 15px;
-                
-                
+                    
+                    
 
-                .bar1, .bar2, .bar3{
+                .bar1{
                     @media @phone{
                         width: 35px;
                         height: 5px;
                         background-color: #fff;
                         margin: 6px 0;
                         transition: .4s;
-                        
-                        // margin-left: 300px;
-                        
+                            
+                            
+                            
+                        }
+        
                     }
-    
+                    
+
+                    
                 }
-                .new-nav{
-                    display:none;
-                }
-
-                
-            }
 
             
 
             
             
-        }
+            
 
         
-   }
+        };
 
   
 
   
+    };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
-  }
+    width: 97.5%;
+    @media @phone{
+        width: 100%;
+    }
+    @media @desktop{
+        width: 69.5%;
+    }
+
+}
+
+.toggle-on{
+    display:block;
+};
