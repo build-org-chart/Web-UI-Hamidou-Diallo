@@ -230,17 +230,21 @@ header nav ul a:hover {
 header nav .nav-end {
   padding-top: 20px;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
-header nav .nav-end a .btn-1 {
-  border-radius: 5px;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  margin-right: 50px;
+header nav .nav-end a {
+  border: #553D67 groove 2px;
+  border-radius: 80px;
+  padding: 10px 50px;
+  font-size: 1.4rem;
+  margin-right: 25px;
+  margin-top: 50px;
   color: white;
   background-color: #f41b4c;
   text-align: center;
+  text-decoration: none;
 }
-header nav .nav-end .btn-1:hover {
+header nav .nav-end a:hover {
   color: #F64C72;
   background-color: white;
   text-decoration: underline;
