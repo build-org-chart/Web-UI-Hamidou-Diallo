@@ -215,6 +215,109 @@ header nav .logo {
     height: 80px;
   }
 }
+@media (max-width: 500px) {
+  header nav .drop-down-bar {
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px 15px 15px 15px;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  header nav .drop-down-bar .bar1,
+  header nav .drop-down-bar .bar2,
+  header nav .drop-down-bar .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+header nav .nav-end {
+  padding-top: 20px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  header nav .nav-end {
+    display: block;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: 100%;
+    width: 170px;
+    max-width: 100%;
+    z-index: 2;
+    padding: 0px 30px 0;
+    background-color: #b38b6d;
+    box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+header nav .nav-end .buttons a {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: #553D67 groove 2px;
+  border-radius: 80px;
+  padding: 10px 50px;
+  font-size: 1.4rem;
+  margin-right: 25px;
+  margin-top: 50px;
+  color: white;
+  background-color: #f41b4c;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav .nav-end .buttons a {
+    display: flex;
+    flex-direction: column;
+    border-radius: 80px;
+    padding: 5px 25px;
+    font-size: 1rem;
+    margin: 5px 0px;
+  }
+}
+header nav .nav-end .buttons a .buttons a:hover {
+  color: #F64C72;
+  background-color: white;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  header nav .nav-end .buttons a .buttons a:first-child {
+    background-color: #F64C72;
+  }
+}
+@media (max-width: 500px) {
+  header nav .nav-end .buttons a .buttons a:nth-child(2) {
+    background-color: #379683;
+  }
+}
+header nav .nav-end .new-links {
+  display: none;
+}
+@media (max-width: 500px) {
+  header nav .nav-end .new-links {
+    display: block;
+  }
+  header nav .nav-end .new-links ul {
+    display: block;
+  }
+  header nav .nav-end .new-links ul li {
+    margin-top: 20px;
+  }
+  header nav .nav-end .new-links ul li a {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #b38b6d;
+    border: 0px solid #b38b6d;
+    border-radius: 0px;
+  }
+  header nav .nav-end .new-links ul li a:hover {
+    text-decoration: underline;
+    color: #F64C72;
+  }
+}
 header nav ul {
   display: flex;
   padding-top: 40px;
@@ -222,7 +325,7 @@ header nav ul {
 }
 @media (max-width: 500px) {
   header nav ul {
-    display: none;
+    display: none ;
     padding-top: 20px;
   }
 }
@@ -243,50 +346,6 @@ header nav ul a:hover {
   text-decoration: underline;
   color: #F64C72;
 }
-header nav .nav-end {
-  padding-top: 20px;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-@media (max-width: 500px) {
-  header nav .nav-end {
-    display: none;
-    padding-bottom: 20px;
-  }
-}
-header nav .nav-end a {
-  border: #553D67 groove 2px;
-  border-radius: 80px;
-  padding: 10px 50px;
-  font-size: 1.4rem;
-  margin-right: 25px;
-  margin-top: 50px;
-  color: white;
-  background-color: #f41b4c;
-  text-align: center;
-  text-decoration: none;
-}
-header nav .nav-end a:hover {
-  color: #F64C72;
-  background-color: white;
-  text-decoration: underline;
-}
-@media (max-width: 500px) {
-  header nav .drop-down {
-    display: inline-block;
-    cursor: pointer;
-    margin: 20px 15px 15px 15px;
-  }
-}
-@media (max-width: 500px) and (max-width: 500px) {
-  header nav .drop-down .bar1 {
-    width: 35px;
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-}
 .sticky {
   position: fixed;
   top: 0;
@@ -304,6 +363,17 @@ header nav .nav-end a:hover {
 }
 .toggle-on {
   display: block;
+}
+.toggle-off {
+  display: none;
+}
+.change-1 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.change-2 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 .main-content {
   position: relative;
@@ -424,7 +494,7 @@ header nav .nav-end a:hover {
   .lower-content .low-content-1 button {
     padding: 10px 30px;
     text-align: center;
-    margin-left: 110px;
+    margin-left: 130px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -497,7 +567,7 @@ header nav .nav-end a:hover {
   .lower-content .low-content-2 button {
     padding: 10px 30px;
     text-align: center;
-    margin-left: 110px;
+    margin-left: 130px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
