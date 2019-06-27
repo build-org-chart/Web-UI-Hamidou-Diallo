@@ -240,11 +240,11 @@ header nav .nav-end {
 }
 @media (max-width: 500px) {
   header nav .nav-end {
-    display: block;
     position: fixed;
     top: 60px;
     right: 0;
     height: 100%;
+    min-height: 100%;
     width: 170px;
     max-width: 100%;
     z-index: 2;
@@ -254,6 +254,7 @@ header nav .nav-end {
   }
 }
 header nav .nav-end .buttons a {
+  display: none;
   padding-bottom: 20px;
   padding-left: 20px;
   border: #553D67 groove 2px;
@@ -342,9 +343,28 @@ header nav ul li a {
     margin-left: 30px;
   }
 }
-header nav ul a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
   color: #F64C72;
+}
+header nav .btn-desktop a {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: #553D67 groove 2px;
+  border-radius: 80px;
+  padding: 10px 50px;
+  font-size: 1.4rem;
+  margin-right: 25px;
+  margin-top: 50px;
+  color: white;
+  background-color: #f41b4c;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav .btn-desktop a {
+    display: none;
+  }
 }
 .sticky {
   position: fixed;
@@ -367,13 +387,13 @@ header nav ul a:hover {
 .toggle-off {
   display: none;
 }
-.change-1 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
 .change-2 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(60deg) translate(-1px, -3px);
+}
+.change-1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-60deg) translate(-9px, 6px);
 }
 .main-content {
   position: relative;
@@ -502,6 +522,11 @@ header nav ul a:hover {
     font-size: 2rem;
   }
 }
+@media (max-width: 500px) and (max-width: 320px) {
+  .lower-content .low-content-1 button {
+    margin-left: 85px;
+  }
+}
 .lower-content .low-content-1 button:hover {
   color: #F64C72;
   background-color: white;
@@ -575,6 +600,11 @@ header nav ul a:hover {
     font-size: 2rem;
   }
 }
+@media (max-width: 500px) and (max-width: 320px) {
+  .lower-content .low-content-2 button {
+    margin-left: 85px;
+  }
+}
 .lower-content .low-content-2 button:hover {
   color: #F64C72;
   background-color: white;
@@ -633,5 +663,6 @@ header nav ul a:hover {
 @media (max-width: 500px) {
   .footer .fa {
     margin-right: 20px;
+    padding: 10px;
   }
 }

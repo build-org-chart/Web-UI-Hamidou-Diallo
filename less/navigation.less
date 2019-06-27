@@ -56,7 +56,7 @@ header{
                      
  
                  .bar1,.bar2,.bar3{
-                     @media @phone{
+                    @media @phone{
                          width: 35px;
                          height: 5px;
                          background-color: #fff;
@@ -68,9 +68,9 @@ header{
                              
                              
                              
-                         }
+                    }
          
-                     }
+                }
                      
  
                      
@@ -85,14 +85,14 @@ header{
          
          };
 
-         .nav-end{
+        .nav-end{
             
             padding-top: 20px;
             justify-content: space-evenly;
             margin-top: 20px;
             
             @media @phone{
-                display: block;
+               
                 
                 // margin-top: 70px;
                 // background-color: white;
@@ -103,7 +103,7 @@ header{
                 top: 60px;
                 right: 0;
                 height: 100%;
-                // min-height: 100%;
+                min-height: 100%;
                 width: 170px;
                 max-width: 100%;
                 z-index: 2;
@@ -115,6 +115,7 @@ header{
             }
             
             .buttons a {
+                display: none;
                 padding-bottom: 20px;
                 padding-left: 20px;
                 border: #553D67 groove 2px;
@@ -127,6 +128,7 @@ header{
                 background-color: darken(@nav-btn,10%);
                 text-align: center;
                 text-decoration: none;
+                
                 @media @phone{
                     display:flex;
                     flex-direction: column;
@@ -155,7 +157,7 @@ header{
                     @media @phone{
                         background-color: #379683;
                     }
-            }
+                }
 
             
             
@@ -221,11 +223,30 @@ header{
             
                 }
             }
-            a:hover{
+            li a:hover{
                 text-decoration: underline;
                 color: @nav-btn;
             }
 
+        }
+        .btn-desktop{
+            a{
+                padding-bottom: 20px;
+                padding-left: 20px;
+                border: #553D67 groove 2px;
+                border-radius: 80px;
+                padding: 10px 50px;;
+                font-size: 1.4rem;
+                margin-right: 25px;
+                margin-top: 50px;
+                color: white;
+                background-color: darken(@nav-btn,10%);
+                text-align: center;
+                text-decoration: none;
+                @media @phone{
+                    display:none;
+                }
+            }
         }
         
 
@@ -286,12 +307,12 @@ header{
 //     box-shadow: 5px 2px 5px 5px rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 // }
 
-.change-1 {
+.change-2 {
     -webkit-transform: rotate(45deg) translate(-8px,-8px);
-    transform: rotate(45deg) translate(-8px,-8px);
+    transform: rotate(60deg) translate(-1px,-3px);
 };
 
-.change-2  {
+.change-1  {
     -webkit-transform: rotate(-45deg) translate(-9px,6px);
-    transform: rotate(-45deg) translate(-9px,6px);
+    transform: rotate(-60deg) translate(-9px,6px);
 }
