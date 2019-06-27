@@ -4,7 +4,9 @@
     color: white;
     @media @phone{
         margin: 0 auto;
+        height: 150%;
         img{
+            height: 100%;
             width: 100%;;
         }      
             
@@ -19,9 +21,7 @@
         transform: translate(-50%, -50%);
 
         @media @phone{
-            p{
-              font-size: 1rem;  
-            }
+            display: none;
         }
     } 
     button{
@@ -43,6 +43,7 @@
             margin-bottom: 10px;
             border-radius: 10px;
             background-color: #99738E;
+            display: none;
             
         }
     }
@@ -73,7 +74,7 @@
 
 
     .low-content-1{
-        background-color: #553D67;
+        background-color: @bod-color;
         width: 50%;
         padding-top: 30px;
         @media @phone{
@@ -126,6 +127,10 @@
                 border-radius: 20px;
                 background-color:darken(@nav-btn,10%);
                 font-size: 2rem;
+
+                @media @smPhone{
+                    margin-left: 85px;
+                }
             }
         }
         button:hover{
@@ -146,6 +151,7 @@
         padding-top: 30px;
 
         @media @phone{
+            background-color: #379683 ;
             width: 100%;
         }
         h1{
@@ -195,6 +201,10 @@
                 border-radius: 20px;
                 background-color:darken(@nav-btn,10%);
                 font-size: 2rem;
+
+                @media @smPhone{
+                    margin-left: 85px;
+                }
             }
         }
 
@@ -232,6 +242,7 @@
             margin-left: 200px;
             margin-top:10px;
             margin-bottom: 15px;
+
         }
     }
 }
