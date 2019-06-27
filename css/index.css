@@ -347,6 +347,9 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: #F64C72;
 }
+header nav .btn-desktop {
+  margin-top: 45px;
+}
 header nav .btn-desktop a {
   padding-bottom: 20px;
   padding-left: 20px;
