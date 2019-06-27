@@ -756,6 +756,33 @@ header nav .btn-desktop a {
   padding-bottom: 40px;
   color: #2F2FA2;
 }
+.login {
+  background-color: "orange";
+}
+.login .login-1 label {
+  padding-top: 40px;
+  font-size: 4rem;
+  text-align: center;
+  color: #ff6644;
+  margin-left: 10px;
+}
+.login .login-1 input {
+  padding: 10px;
+  margin: 20px 0px;
+  width: 100%;
+  color: #ff6644;
+}
+.login .login-1 .btn-login {
+  color: white;
+  background-color: #ff6644;
+  width: 50%;
+  margin: 20px 0px;
+  margin-left: 70px;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 1.5rem;
+}
 .footer {
   background-color: #C0C0C0;
   padding: 20px;
