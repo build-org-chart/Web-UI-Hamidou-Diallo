@@ -392,7 +392,7 @@ header nav .btn-desktop a {
 }
 .change-2 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(60deg) translate(-1px, -3px);
+  transform: rotate(60deg) translate(-1px, -1px);
 }
 .change-1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
