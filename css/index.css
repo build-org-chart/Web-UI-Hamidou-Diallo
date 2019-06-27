@@ -673,22 +673,47 @@ header nav .btn-desktop a {
   align-items: center;
   font-family: 'Work Sans', sans-serif;
 }
+@media (max-width: 500px) {
+  .about-container {
+    width: 100%;
+  }
+}
 .about-container h1 {
   font-size: 6rem;
   font-weight: bold;
   color: #2F2FA2;
   padding-bottom: 100px;
 }
+@media (max-width: 500px) {
+  .about-container h1 {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+}
 .about-container .panels {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .about-container .panels {
+    width: 100%;
+    display: flex;
+  }
 }
 .about-container .panels .panel h2 {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
   color: #ff6644;
+}
+@media (max-width: 500px) {
+  .about-container .panels .panel h2 {
+    width: 100%;
+  }
 }
 .about-container .panels .panel img {
   border-radius: 60px;
@@ -697,12 +722,31 @@ header nav .btn-desktop a {
   margin-right: 100px;
   margin-left: 100px;
 }
+@media (max-width: 500px) {
+  .about-container .panels .panel img {
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+  }
+}
 .about-container .panels .panel #pear {
   margin-left: 470px;
+}
+@media (max-width: 500px) {
+  .about-container .panels .panel #pear {
+    width: 100%;
+    margin: 0px;
+  }
 }
 .about-container .panels .panel #pear1 {
   margin-left: 360px;
   color: #ff6644;
+}
+@media (max-width: 500px) {
+  .about-container .panels .panel #pear1 {
+    width: 100%;
+    margin: 0px;
+  }
 }
 .about-container .panels .panel #pear1:last-child {
   color: #2F2FA2;

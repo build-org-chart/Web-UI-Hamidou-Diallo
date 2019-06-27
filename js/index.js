@@ -17,10 +17,10 @@ btnDesk.forEach(function(item){
 
 
 // Components
-// window.addEventListener("scroll", function(ev){
-//     document.querySelector(".low-content-2").style.backgroundColor = "#379683";
+ window.addEventListener("scroll", function(ev){
+    document.querySelector(".low-content-2").style.backgroundColor = "#379683";
 
-// });
+});
 
 
 // stick nav bar
