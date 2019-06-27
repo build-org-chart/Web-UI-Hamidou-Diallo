@@ -17,10 +17,10 @@ btnDesk.forEach(function(item){
 
 
 // Components
-window.addEventListener("scroll", function(ev){
-    document.querySelector(".low-content-2").style.backgroundColor = "#379683";
+// window.addEventListener("scroll", function(ev){
+//     document.querySelector(".low-content-2").style.backgroundColor = "#379683";
 
-});
+// });
 
 
 // stick nav bar
@@ -74,3 +74,32 @@ navSlide();
 
 // TODO: Begin tabs and additional events for the landing page.Begin
 
+
+
+
+const image = () => {
+    // const panels = document.querySelector(".panel");
+    const images = document.querySelectorAll("img");
+    // const text = document.querySelector("p");
+
+    // panels.addEventListener("mouseon", ev =>{
+    //     ev.backgroundColor = "grey";
+    // });
+    images.forEach(function(item){
+        item.addEventListener("click", ev => {
+            ev.target.style.border = " 5px groove #ff6644";
+            setTimeout(function(){
+                ev.target.style.border = "";
+            },200);
+        },false);
+    });
+
+
+};
+
+image();
+// images.forEach(item =>{
+//     item.addEventListener("click", ev =>{
+//         ev.style.target.style.backgroundColor = "#ff6644";
+//     });
+// });
