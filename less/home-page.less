@@ -284,3 +284,131 @@
         }
     }
  */
+
+
+//  about page
+.about-container{
+    background-color: #379683;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Work Sans', sans-serif;
+    @media @phone{
+        width: 100%;
+    }
+   
+    h1{
+        font-size: 6rem;
+        font-weight: bold;
+        color: @bod-color;
+        padding-bottom: 100px;
+        @media @phone{
+            font-size: 3.5rem;
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+    }
+    
+    .panels{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        @media @phone{
+            width: 100%;
+            display: flex;
+        }
+        .panel{
+            h2{
+                font-size: 4rem;
+                font-weight: bold;
+                text-align: center;
+                color: #ff6644;
+                @media @phone{
+                    width: 100%;
+                }
+            }
+            
+            img{
+                border-radius: 60px;
+                height: 500px;
+                width: 500px;
+                margin-right: 100px;
+                margin-left: 100px;
+                @media @phone{
+                    width: 100%;
+                    height: 300px;
+                    margin:0px;
+                }
+                
+            
+            }
+            #pear{
+                margin-left: 470px;
+                @media @phone{
+                    width: 100%;
+                    margin: 0px;
+                }
+                
+
+            }
+            #pear1{
+                margin-left:360px;
+                color: #ff6644;
+                @media @phone{
+                    width: 100%;
+                    margin: 0px;
+                }
+                
+            }
+            #pear1:last-child{
+                color: @bod-color;
+            }
+            p{
+                text-align: center;
+                padding-bottom: 40px;
+                color: @bod-color;
+            }
+        }
+    }
+    
+}
+
+
+
+
+// login page
+
+.login{
+    background-color: "orange";
+    
+
+    .login-1{
+        
+        label{
+            padding-top: 40px;
+            font-size: 4rem;
+            text-align: center;
+            color: #ff6644;
+            margin-left: 10px;
+        }
+        input{
+            padding: 10px;
+            margin: 20px 0px;
+            width: 100%;
+            color: #ff6644;
+        }
+        .btn-login{
+            color: white;
+            background-color: #ff6644;
+            width: 50%;
+            margin: 20px 0px;
+            margin-left: 70px;
+            border-radius: 50px;
+            text-align:center;
+            padding: 10px 0px;
+            font-size: 1.5rem;
+        }
+    }
+}
