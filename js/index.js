@@ -1,4 +1,14 @@
-// Event Listeners
+// import anime from 'lib/anime.es.js';
+// const anime = require('lib/anime.js')
+// const elements = document.querySelectorAll('.logo');
+
+// anime({
+//   targets: elements,
+//   translateX: 270
+// });
+
+
+
 const btnDesk = document.querySelectorAll(".btn-1");
 console.log(btnDesk);
 
@@ -23,7 +33,7 @@ btnDesk.forEach(function(item){
 });
 
 
-// stick nav bar
+// sticky nav bar
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
