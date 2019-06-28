@@ -206,6 +206,7 @@ header nav {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
+    z-index: 2;
   }
 }
 header nav .logo {
@@ -245,6 +246,7 @@ header nav .nav-end {
 @media (max-width: 500px) {
   header nav .nav-end {
     position: fixed;
+    overflow: hidden;
     top: 43px;
     right: 0;
     height: 100%;
@@ -601,7 +603,7 @@ header nav .btn-desktop a {
 .lower-content .low-content-2 button {
   padding: 10px 30px;
   text-align: center;
-  margin-left: 280px;
+  margin-left: 290px;
   margin-top: 10px;
   margin-bottom: 15px;
   border-radius: 20px;
@@ -799,11 +801,11 @@ header nav .btn-desktop a {
   }
 }
 .footer .contact {
-  margin-left: 20px;
+  margin-left: 60px;
 }
 @media (max-width: 500px) {
   .footer .contact {
-    margin-right: 25px;
+    margin-right: 53px;
   }
 }
 .footer .contact .fa {
@@ -831,7 +833,6 @@ header nav .btn-desktop a {
 @media (max-width: 500px) {
   .footer p {
     font-size: 1.2rem;
-    margin-right: 0px;
     padding-top: 15px;
     margin-right: 10px;
   }
